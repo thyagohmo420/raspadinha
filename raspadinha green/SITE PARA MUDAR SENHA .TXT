@@ -1,0 +1,2 @@
+site para mudar a senha: https://onlinephp.io/password-hash#google_vignette
+
