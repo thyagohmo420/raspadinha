@@ -8,31 +8,31 @@ include('./conexao.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $nomeSite;?> - Raspadinhas Online</title>
-    <meta name="description" content="Raspe e ganhe prêmios incríveis! PIX na conta instantâneo.">
-    
+    <title><?php echo $nomeSite;?> - Raspadinha da Fé</title>
+    <meta name="description" content="Raspadinha da Fé - Participe e ganhe prêmios incríveis! Uma experiência abençoada.">
+
     <!-- Preload Critical Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/style/globalStyles.css?v=<?php echo time();?>"/>
-    
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.8/dist/notiflix-aio-3.2.8.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/notiflix@3.2.8/src/notiflix.min.css" rel="stylesheet">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    
+
     <!-- Open Graph -->
-    <meta property="og:title" content="<?php echo $nomeSite;?> - Raspadinhas Online">
-    <meta property="og:description" content="Raspe e ganhe prêmios incríveis! PIX na conta instantâneo.">
+    <meta property="og:title" content="<?php echo $nomeSite;?> - Raspadinha da Fé">
+    <meta property="og:description" content="Raspadinha da Fé - Participe e ganhe prêmios incríveis! Uma experiência abençoada.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo $urlSite;?>">
     
@@ -45,10 +45,10 @@ include('./conexao.php');
             left: 0;
             width: 100vw;
             height: 100vh;
-            background: #0a0a0a;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
             z-index: 9999;
             transition: opacity 0.5s ease;
-            
+
             /* Centralização perfeita */
             display: grid;
             place-items: center;
@@ -68,14 +68,14 @@ include('./conexao.php');
             left: 0;
             width: 100%;
             height: 100%;
-            border: 3px solid rgba(34, 197, 94, 0.3);
-            border-top-color: #22c55e;
+            border: 4px solid rgba(59, 130, 246, 0.25);
+            border-top-color: #3b82f6;
             border-radius: 50%;
-            
+
             /* Chaves para rotação sem movimento */
             transform-origin: 50% 50%; /* Centro exato */
             animation: spinFixed 1s linear infinite;
-            
+
             /* Força o elemento a manter posição */
             margin: 0;
             padding: 0;
@@ -96,10 +96,10 @@ include('./conexao.php');
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: conic-gradient(#22c55e, rgba(34, 197, 94, 0.3));
+            background: conic-gradient(#3b82f6, rgba(59, 130, 246, 0.25));
             animation: rotateSimple 1s linear infinite;
             position: relative;
-            
+
             /* Máscara para criar o efeito de spinner */
             mask: radial-gradient(circle at center, transparent 18px, black 21px);
             -webkit-mask: radial-gradient(circle at center, transparent 18px, black 21px);
@@ -115,13 +115,13 @@ include('./conexao.php');
         .loading-spinner-modern {
             width: 50px;
             height: 50px;
-            background: 
-                conic-gradient(from 0deg, transparent, #22c55e, transparent),
-                conic-gradient(from 180deg, transparent, rgba(34, 197, 94, 0.3), transparent);
+            background:
+                conic-gradient(from 0deg, transparent, #3b82f6, transparent),
+                conic-gradient(from 180deg, transparent, rgba(59, 130, 246, 0.25), transparent);
             border-radius: 50%;
             animation: rotateModern 1s linear infinite;
             position: relative;
-            
+
             /* Efeito de máscara para criar o anel */
             mask: radial-gradient(circle, transparent 17px, black 20px);
             -webkit-mask: radial-gradient(circle, transparent 17px, black 20px);
@@ -184,11 +184,11 @@ include('./conexao.php');
         
         /* Glowing effect */
         .glow {
-            box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.35);
         }
-        
+
         .glow:hover {
-            box-shadow: 0 0 30px rgba(34, 197, 94, 0.5);
+            box-shadow: 0 0 35px rgba(59, 130, 246, 0.5);
         }
     </style>
 </head>
@@ -267,14 +267,14 @@ include('./conexao.php');
 
         // Notiflix configuration
         Notiflix.Notify.init({
-            width: '300px',
+            width: '320px',
             position: 'right-top',
-            distance: '20px',
+            distance: '24px',
             opacity: 1,
-            borderRadius: '12px',
+            borderRadius: '14px',
             rtl: false,
-            timeout: 4000,
-            messageMaxLength: 110,
+            timeout: 4500,
+            messageMaxLength: 120,
             backOverlay: false,
             backOverlayColor: 'rgba(0,0,0,0.5)',
             plainText: true,
@@ -285,7 +285,7 @@ include('./conexao.php');
             className: 'notiflix-notify',
             zindex: 4001,
             fontFamily: 'Inter',
-            fontSize: '14px',
+            fontSize: '15px',
             cssAnimation: true,
             cssAnimationDuration: 400,
             cssAnimationStyle: 'zoom',
@@ -293,15 +293,15 @@ include('./conexao.php');
             useIcon: true,
             useFontAwesome: false,
             fontAwesomeIconStyle: 'basic',
-            fontAwesomeIconSize: '16px',
+            fontAwesomeIconSize: '18px',
             success: {
-                background: '#22c55e',
+                background: '#3b82f6',
                 textColor: '#fff',
                 childClassName: 'notiflix-notify-success',
-                notiflixIconColor: 'rgba(0,0,0,0.2)',
+                notiflixIconColor: 'rgba(255,255,255,0.3)',
                 fontAwesomeClassName: 'fas fa-check-circle',
-                fontAwesomeIconColor: 'rgba(0,0,0,0.2)',
-                backOverlayColor: 'rgba(34,197,94,0.2)',
+                fontAwesomeIconColor: 'rgba(255,255,255,0.3)',
+                backOverlayColor: 'rgba(59,130,246,0.2)',
             }
         });
 
@@ -331,8 +331,8 @@ include('./conexao.php');
         }
 
         // Console welcome message
-        console.log('%c🎯 RaspaGreen - Bem-vindo!', 'color: #22c55e; font-size: 16px; font-weight: bold;');
-        console.log('%cSistema carregado com sucesso!', 'color: #16a34a; font-size: 12px;');
+        console.log('%c🙏 Raspadinha da Fé - Bem-vindo!', 'color: #3b82f6; font-size: 18px; font-weight: bold;');
+        console.log('%cQue Deus abençoe sua jornada!', 'color: #2563eb; font-size: 13px; font-weight: 600;');
     </script>
 
     <!-- Performance and Analytics -->

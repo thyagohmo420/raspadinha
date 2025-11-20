@@ -473,15 +473,16 @@ if (isset($_SESSION['usuario_id'])) {
 <style>
 /* Header Styles */
 .header {
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1.25rem 0;
 }
 
 .header-container {
@@ -518,27 +519,27 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .logo-icon {
-    width: 45px;
-    height: 45px;
-    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #ffffff;
-    font-weight: 800;
-    box-shadow: 
-        0 8px 20px rgba(34, 197, 94, 0.3),
-        0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 900;
+    box-shadow:
+        0 8px 20px rgba(59, 130, 246, 0.35),
+        0 4px 8px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 }
 
 .logo-icon:hover {
-    box-shadow: 
-        0 12px 30px rgba(34, 197, 94, 0.4),
-        0 6px 12px rgba(0, 0, 0, 0.3);
-    transform: translateY(-1px);
+    box-shadow:
+        0 12px 30px rgba(59, 130, 246, 0.45),
+        0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Sidebar Logo Styles - Apenas logo, sem texto */
@@ -556,26 +557,26 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .sidebar-logo-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ffffff;
-    font-weight: 800;
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+    font-weight: 900;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
 }
 
 /* App Download Banner */
 .app-download-banner {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
-    padding: 0.6rem 1rem;
-    font-size: 0.85rem;
-    font-weight: 600;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
     text-align: center;
     position: fixed;
     top: 0;
@@ -587,8 +588,8 @@ if (isset($_SESSION['usuario_id'])) {
     justify-content: center;
     gap: 0.75rem;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
 }
 
 .app-download-banner i {
@@ -636,13 +637,14 @@ if (isset($_SESSION['usuario_id'])) {
 .header {
     top: 0;
     position: fixed;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1.25rem 0;
     transition: top 0.3s ease;
 }
 
@@ -671,76 +673,76 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .install-modal-content {
-    background: linear-gradient(145deg, #1a1a1a 0%, #2a2a2a 100%);
-    border: 1px solid rgba(34, 197, 94, 0.3);
-    border-radius: 20px;
-    max-width: 500px;
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 24px;
+    max-width: 520px;
     width: 100%;
     max-height: 90vh;
     overflow-y: auto;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 .install-modal-header {
-    padding: 2rem 2rem 1rem;
+    padding: 2.25rem 2.25rem 1.25rem;
     text-align: center;
     position: relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(59, 130, 246, 0.15);
 }
 
 .install-modal-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1rem;
-    font-size: 1.8rem;
+    margin: 0 auto 1.25rem;
+    font-size: 2rem;
     color: white;
-    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
 }
 
 .install-modal-header h2 {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
+    color: #1e293b;
+    font-size: 1.75rem;
+    font-weight: 800;
     margin: 0;
 }
 
 .install-modal-close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.25rem;
+    right: 1.25rem;
     background: none;
     border: none;
-    color: #9ca3af;
+    color: #64748b;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     padding: 0.5rem;
     border-radius: 8px;
 }
 
 .install-modal-close:hover {
-    color: white;
-    background: rgba(255, 255, 255, 0.1);
+    color: #1e293b;
+    background: rgba(59, 130, 246, 0.1);
 }
 
 .install-benefits {
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.75rem 2.25rem;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.15);
 }
 
 .benefits-title {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    color: #22c55e;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    gap: 0.625rem;
+    color: #2563eb;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .benefits-title i {
@@ -755,14 +757,14 @@ if (isset($_SESSION['usuario_id'])) {
 .benefit-item {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    color: #e5e7eb;
-    font-size: 0.9rem;
+    gap: 0.875rem;
+    color: #475569;
+    font-size: 1rem;
 }
 
 .benefit-item i {
-    color: #22c55e;
-    font-size: 1rem;
+    color: #3b82f6;
+    font-size: 1.125rem;
     flex-shrink: 0;
 }
 
@@ -778,30 +780,31 @@ if (isset($_SESSION['usuario_id'])) {
 
 .platform-tab {
     flex: 1;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #9ca3af;
-    padding: 0.75rem 1rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    background: rgba(59, 130, 246, 0.05);
+    border: 2px solid rgba(59, 130, 246, 0.2);
+    color: #64748b;
+    padding: 0.875rem 1.125rem;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.625rem;
 }
 
 .platform-tab.active {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
-    border-color: rgba(34, 197, 94, 0.5);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border-color: rgba(59, 130, 246, 0.6);
     color: white;
 }
 
 .platform-tab:hover:not(.active) {
-    background: rgba(255, 255, 255, 0.08);
-    color: white;
+    background: rgba(59, 130, 246, 0.1);
+    color: #1e293b;
+    border-color: rgba(59, 130, 246, 0.3);
 }
 
 .platform-content {
@@ -820,37 +823,38 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .step-number {
-    width: 32px;
-    height: 32px;
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 0.9rem;
+    font-weight: 800;
+    font-size: 1rem;
     flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .step-content h4 {
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0 0 0.25rem 0;
+    color: #1e293b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.375rem 0;
 }
 
 .step-content p {
-    color: #9ca3af;
-    font-size: 0.9rem;
+    color: #64748b;
+    font-size: 1rem;
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.625rem;
 }
 
 .step-content p i {
-    color: #22c55e;
+    color: #3b82f6;
 }
 
 .desktop-note {
@@ -884,21 +888,22 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .install-understand-btn {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
     border: none;
-    padding: 0.875rem 2rem;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 600;
+    padding: 1rem 2.25rem;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.35);
 }
 
 .install-understand-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.45);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
 }
 
 /* Bottom Navigation Styles - NEW */
@@ -907,12 +912,12 @@ if (isset($_SESSION['usuario_id'])) {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.98);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0.5rem 0;
+    border-top: 2px solid rgba(59, 130, 246, 0.2);
+    padding: 0.625rem 0;
     z-index: 999;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .bottom-nav-container {
@@ -929,12 +934,12 @@ if (isset($_SESSION['usuario_id'])) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 0.25rem;
+    padding: 0.625rem 0.375rem;
     text-decoration: none;
-    color: #9ca3af;
+    color: #64748b;
     transition: all 0.3s ease;
-    border-radius: 12px;
-    min-width: 60px;
+    border-radius: 14px;
+    min-width: 65px;
     position: relative;
     background: none;
     border: none;
@@ -943,78 +948,78 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .bottom-nav-item i {
-    font-size: 1.2rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.375rem;
     transition: all 0.3s ease;
 }
 
 .bottom-nav-item span {
-    font-size: 0.7rem;
-    font-weight: 500;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .bottom-nav-item:hover {
-    color: #22c55e;
+    color: #3b82f6;
     transform: translateY(-2px);
 }
 
 .bottom-nav-item.active {
-    color: #22c55e;
+    color: #2563eb;
 }
 
 .bottom-nav-item.active i {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 /* Special styling for deposit button */
 .bottom-nav-item.deposit-btn {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
-    border-radius: 16px;
-    padding: 0.75rem 0.5rem;
-    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
-    transform: translateY(-4px);
+    border-radius: 18px;
+    padding: 0.875rem 0.625rem;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.35);
+    transform: translateY(-5px);
 }
 
 .bottom-nav-item.deposit-btn:hover {
-    background: linear-gradient(135deg, #16a34a, #15803d);
-    transform: translateY(-6px);
-    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transform: translateY(-7px);
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.45);
 }
 
 .bottom-nav-item.deposit-btn i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .bottom-nav-item.deposit-btn span {
-    font-weight: 600;
-    font-size: 0.75rem;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
 /* Special styling for register button */
 .bottom-nav-item.register-btn {
-    background: linear-gradient(135deg, #22c55e, #16a34a);
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
-    border-radius: 16px;
-    padding: 0.75rem 0.5rem;
-    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+    border-radius: 18px;
+    padding: 0.875rem 0.625rem;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.35);
 }
 
 .bottom-nav-item.register-btn:hover {
-    background: linear-gradient(135deg, #16a34a, #15803d);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
     transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.45);
 }
 
 .bottom-nav-item.register-btn i {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .bottom-nav-item.register-btn span {
-    font-weight: 600;
-    font-size: 0.75rem;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
 /* Badge for notifications (optional) */
@@ -1191,15 +1196,16 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .nav-link {
-    color: #9ca3af;
+    color: #4b5563;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.05rem;
     transition: all 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #ffffff;
+    color: #2563eb;
 }
 
 .nav-link::after {
@@ -1208,9 +1214,10 @@ if (isset($_SESSION['usuario_id'])) {
     bottom: -4px;
     left: 0;
     width: 0;
-    height: 2px;
-    background: #22c55e;
+    height: 3px;
+    background: #3b82f6;
     transition: width 0.3s ease;
+    border-radius: 2px;
 }
 
 .nav-link:hover::after {
@@ -1224,68 +1231,76 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .btn-login {
-    color: #9ca3af;
+    color: #4b5563;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.05rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.625rem;
     transition: color 0.3s ease;
 }
 
 .btn-login:hover {
-    color: #ffffff;
+    color: #2563eb;
 }
 
 .btn-register {
-    background: #22c55e;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 12px;
-    font-weight: 600;
+    padding: 0.875rem 1.75rem;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1.05rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.625rem;
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .btn-register:hover {
-    background: #16a34a;
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .balance-display {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 0.5rem 1rem;
+    background: rgba(59, 130, 246, 0.08);
+    border: 2px solid rgba(59, 130, 246, 0.25);
+    border-radius: 14px;
+    padding: 0.625rem 1.125rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    color: #22c55e;
-    font-weight: 600;
+    gap: 0.625rem;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 1.05rem;
 }
 
 .btn-deposit {
-    background: #22c55e;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 12px;
-    font-weight: 600;
+    padding: 0.875rem 1.75rem;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1.05rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.625rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .btn-deposit:hover {
-    background: #16a34a;
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .user-dropdown {
@@ -1293,20 +1308,22 @@ if (isset($_SESSION['usuario_id'])) {
 }
 
 .user-btn {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 0.75rem 1rem;
-    color: white;
+    background: rgba(59, 130, 246, 0.08);
+    border: 2px solid rgba(59, 130, 246, 0.25);
+    border-radius: 14px;
+    padding: 0.875rem 1.125rem;
+    color: #1e293b;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.625rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 600;
 }
 
 .user-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.35);
 }
 
 .dropdown-arrow {
@@ -1319,14 +1336,14 @@ if (isset($_SESSION['usuario_id'])) {
 
 .dropdown-menu {
     position: absolute;
-    top: calc(100% + 0.5rem);
+    top: calc(100% + 0.625rem);
     right: 0;
-    min-width: 200px;
-    background: rgba(20, 20, 20, 0.95);
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(59, 130, 246, 0.25);
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -1343,9 +1360,9 @@ if (isset($_SESSION['usuario_id'])) {
 .dropdown-item {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1rem;
-    color: #e5e7eb;
+    gap: 0.875rem;
+    padding: 0.875rem 1.125rem;
+    color: #475569;
     text-decoration: none;
     background: none;
     border: none;
@@ -1353,12 +1370,13 @@ if (isset($_SESSION['usuario_id'])) {
     text-align: left;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .dropdown-item:hover {
-    background: rgba(34, 197, 94, 0.1);
-    color: #22c55e;
+    background: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
 }
 
 .dropdown-item.logout {
@@ -1367,13 +1385,13 @@ if (isset($_SESSION['usuario_id'])) {
 
 .dropdown-item.logout:hover {
     background: rgba(239, 68, 68, 0.1);
-    color: #ef4444;
+    color: #dc2626;
 }
 
 .dropdown-divider {
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 0.5rem 0;
+    height: 2px;
+    background: rgba(59, 130, 246, 0.15);
+    margin: 0.625rem 0;
 }
 
 /* Mobile Sidebar */
@@ -1381,11 +1399,12 @@ if (isset($_SESSION['usuario_id'])) {
     position: fixed;
     top: 0;
     left: 0;
-    width: 280px;
+    width: 300px;
     height: 100vh;
-    background: rgba(15, 15, 15, 0.98);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 2px solid rgba(59, 130, 246, 0.25);
+    box-shadow: 4px 0 30px rgba(0, 0, 0, 0.1);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 1100;
@@ -1400,16 +1419,24 @@ if (isset($_SESSION['usuario_id'])) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.75rem 1.25rem;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.2);
 }
 
 .close-btn {
-    background: none;
+    background: rgba(59, 130, 246, 0.1);
     border: none;
-    color: #9ca3af;
+    color: #64748b;
     font-size: 1.5rem;
     cursor: pointer;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(59, 130, 246, 0.2);
+    color: #2563eb;
 }
 
 .sidebar-nav {
@@ -1419,9 +1446,9 @@ if (isset($_SESSION['usuario_id'])) {
 .sidebar-item {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.75rem 1.5rem;
-    color: #e5e7eb;
+    gap: 0.875rem;
+    padding: 0.875rem 1.75rem;
+    color: #475569;
     text-decoration: none;
     background: none;
     border: none;
@@ -1429,11 +1456,13 @@ if (isset($_SESSION['usuario_id'])) {
     text-align: left;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1.05rem;
 }
 
 .sidebar-item:hover {
-    background: rgba(34, 197, 94, 0.1);
-    color: #22c55e;
+    background: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
 }
 
 .sidebar-item.logout {
@@ -1442,12 +1471,13 @@ if (isset($_SESSION['usuario_id'])) {
 
 .sidebar-item.logout:hover {
     background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
 }
 
 .sidebar-divider {
-    height: 1px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 1rem 0;
+    height: 2px;
+    background: rgba(59, 130, 246, 0.15);
+    margin: 1.125rem 0;
 }
 
 .mobile-backdrop {
