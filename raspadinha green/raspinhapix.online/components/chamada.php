@@ -12,7 +12,7 @@ try {
 <section class="raspadinhas-showcase">
     <div class="showcase-container">
         <div class="showcase-header">
-            <h2 class="showcase-title">Raspadinhas</h2>
+            <h2 class="showcase-title">Tijolos da Sorte</h2>
             <div class="showcase-filters">
                 <button class="filter-btn active" data-filter="todos">Todos</button>
                 <button class="filter-btn" data-filter="dinheiro">Dinheiro</button>
@@ -47,7 +47,7 @@ try {
                         
                         <div class="card-content">
                             <h3 class="card-title"><?= htmlspecialchars($raspinha['nome']) ?></h3>
-                            <p class="card-description"><?= htmlspecialchars($raspinha['descricao'] ?: 'Raspe e ganhe prêmios incríveis!') ?></p>
+                            <p class="card-description"><?= htmlspecialchars($raspinha['descricao'] ?: 'Quebre o tijolo e ganhe prêmios incríveis!') ?></p>
                             
                             <div class="card-footer">
                                 <div class="card-price">
@@ -169,7 +169,7 @@ try {
         <?php if (count($raspadinhas) > 4): ?>
         <div class="showcase-footer">
             <a href="/cartelas" class="view-all-btn">
-                Ver todas as raspadinhas
+                Ver todos os tijolos
                 <i class="bi bi-arrow-right"></i>
             </a>
         </div>

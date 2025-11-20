@@ -103,8 +103,9 @@ if (isset($_SESSION['usuario_id'])) {
         <nav>
             <ul class="nav-menu">
                 <li><a href="/" class="nav-link">Início</a></li>
-                <li><a href="/cartelas" class="nav-link">Raspadinhas</a></li>
-            <!--    <li><a href="/bingo" class="nav-link">Bingo</a></li> -->
+                <li><a href="/cartelas" class="nav-link">Tijolos</a></li>
+                <li><a href="/aviator" class="nav-link">Aviator Celestial</a></li>
+                <li><a href="/roleta" class="nav-link">Roleta da Fé</a></li>
             </ul>
         </nav>
         
@@ -154,7 +155,17 @@ if (isset($_SESSION['usuario_id'])) {
                         
                         <a href="/cartelas" class="dropdown-item">
                             <i class="bi bi-grid-3x3-gap"></i>
-                            Jogar
+                            Tijolos
+                        </a>
+
+                        <a href="/aviator" class="dropdown-item">
+                            <i class="bi bi-airplane"></i>
+                            Aviator Celestial
+                        </a>
+
+                        <a href="/roleta" class="dropdown-item">
+                            <i class="bi bi-circle"></i>
+                            Roleta da Fé
                         </a>
                         
                         <a href="/perfil" class="dropdown-item">
@@ -225,13 +236,18 @@ if (isset($_SESSION['usuario_id'])) {
 
         <a href="/cartelas" class="sidebar-item">
             <i class="bi bi-grid-3x3-gap"></i>
-            <span>Raspadinhas</span>
+            <span>Tijolos</span>
         </a>
 
-        <!-- <a href="/bingo" class="sidebar-item">
-            <i class="bi bi-grid"></i>
-            <span>Bingo</span>
-        </a> -->
+        <a href="/aviator" class="sidebar-item">
+            <i class="bi bi-airplane"></i>
+            <span>Aviator Celestial</span>
+        </a>
+
+        <a href="/roleta" class="sidebar-item">
+            <i class="bi bi-circle"></i>
+            <span>Roleta da Fé</span>
+        </a>
 
         <?php if (isset($_SESSION['usuario_id'])): ?>
             <div class="sidebar-divider"></div>
@@ -285,17 +301,17 @@ if (isset($_SESSION['usuario_id'])) {
                 <i class="bi bi-house-fill"></i>
                 <span>Início</span>
             </a>
-            
+
             <a href="/cartelas" class="bottom-nav-item">
                 <i class="bi bi-grid-3x3-gap-fill"></i>
-                <span>Jogar</span>
+                <span>Tijolos</span>
             </a>
-            
+
             <a href="/login" class="bottom-nav-item">
                 <i class="bi bi-person-fill"></i>
                 <span>Entrar</span>
             </a>
-            
+
             <a href="/cadastro" class="bottom-nav-item register-btn">
                 <i class="bi bi-dice-3-fill"></i>
                 <span>Registrar</span>
@@ -309,9 +325,9 @@ if (isset($_SESSION['usuario_id'])) {
             
             <a href="/cartelas" class="bottom-nav-item">
                 <i class="bi bi-grid-3x3-gap-fill"></i>
-                <span>Jogar</span>
+                <span>Tijolos</span>
             </a>
-            
+
             <button onclick="openDepositModal()" class="bottom-nav-item deposit-btn">
                 <i class="bi bi-plus-circle-fill"></i>
                 <span>Depositar</span>

@@ -8,8 +8,8 @@ include('./conexao.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $nomeSite;?> - Raspadinha da Fé</title>
-    <meta name="description" content="Raspadinha da Fé - Participe e ganhe prêmios incríveis! Uma experiência abençoada.">
+    <title><?php echo $nomeSite;?> - Tijolo da Fé</title>
+    <meta name="description" content="Tijolo da Fé - Participe e ganhe prêmios incríveis! Uma experiência abençoada.">
 
     <!-- Preload Critical Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +31,8 @@ include('./conexao.php');
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="<?php echo $nomeSite;?> - Raspadinha da Fé">
-    <meta property="og:description" content="Raspadinha da Fé - Participe e ganhe prêmios incríveis! Uma experiência abençoada.">
+    <meta property="og:title" content="<?php echo $nomeSite;?> - Tijolo da Fé">
+    <meta property="og:description" content="Tijolo da Fé - Participe e ganhe prêmios incríveis! Uma experiência abençoada.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo $urlSite;?>">
     
@@ -331,7 +331,7 @@ include('./conexao.php');
         }
 
         // Console welcome message
-        console.log('%c🙏 Raspadinha da Fé - Bem-vindo!', 'color: #3b82f6; font-size: 18px; font-weight: bold;');
+        console.log('%c🙏 Tijolo da Fé - Bem-vindo!', 'color: #3b82f6; font-size: 18px; font-weight: bold;');
         console.log('%cQue Deus abençoe sua jornada!', 'color: #2563eb; font-size: 13px; font-weight: 600;');
     </script>
 
