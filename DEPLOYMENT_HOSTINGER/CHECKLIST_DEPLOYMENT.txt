@@ -1,0 +1,158 @@
+═══════════════════════════════════════════════════════════════════
+  CHECKLIST DE DEPLOYMENT - TIJOLO DA FÉ
+  Hostinger Deploy - Marque conforme avança
+═══════════════════════════════════════════════════════════════════
+
+📅 DATA DO DEPLOY: ___/___/_____
+🌐 DOMÍNIO: _________________________________
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 1: PREPARAÇÃO
+═══════════════════════════════════════════════════════════════════
+
+[ ] 1.1 - Conta Hostinger ativa e acessível
+[ ] 1.2 - Arquivo tijolo_da_fe_hostinger.zip baixado (25MB)
+[ ] 1.3 - Backup SQL do banco de dados disponível (.sql)
+[ ] 1.4 - Credenciais de admin anotadas
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 2: BANCO DE DADOS
+═══════════════════════════════════════════════════════════════════
+
+[ ] 2.1 - Acessou hPanel → Bancos de Dados
+[ ] 2.2 - Criou novo banco de dados MySQL
+[ ] 2.3 - Anotou credenciais:
+         Host: ___________________________________
+         Database: ________________________________
+         Username: ________________________________
+         Password: ________________________________
+
+[ ] 2.4 - Acessou phpMyAdmin
+[ ] 2.5 - Selecionou o banco criado
+[ ] 2.6 - Importou arquivo .sql com sucesso
+[ ] 2.7 - Verificou tabelas importadas (config, usuarios, etc.)
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 3: UPLOAD DE ARQUIVOS
+═══════════════════════════════════════════════════════════════════
+
+[ ] 3.1 - Acessou hPanel → Gerenciador de Arquivos
+[ ] 3.2 - Navegou para public_html/ (ou pasta do domínio)
+[ ] 3.3 - Excluiu arquivos padrão (index.html, etc.)
+[ ] 3.4 - Fez upload do arquivo ZIP (25MB)
+[ ] 3.5 - Upload completado (100%)
+[ ] 3.6 - Extraiu arquivo ZIP ("Extrair aqui")
+[ ] 3.7 - Verificou arquivos extraídos (index.php, assets, etc.)
+[ ] 3.8 - Excluiu arquivo ZIP para economizar espaço
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 4: CONFIGURAÇÃO
+═══════════════════════════════════════════════════════════════════
+
+[ ] 4.1 - Editou arquivo conexao.php
+[ ] 4.2 - Atualizou $host = 'localhost'
+[ ] 4.3 - Atualizou $db = 'u123456789_tijolodafe'
+[ ] 4.4 - Atualizou $user = 'u123456789_user'
+[ ] 4.5 - Atualizou $pass = 'senha_do_banco'
+[ ] 4.6 - Salvou arquivo conexao.php
+
+[ ] 4.7 - Configurou permissões /assets/upload/ → 755
+[ ] 4.8 - Configurou permissões /logs/ → 755
+[ ] 4.9 - Verificou permissões gerais (arquivos 644, pastas 755)
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 5: PHP E SSL
+═══════════════════════════════════════════════════════════════════
+
+[ ] 5.1 - Acessou hPanel → Configuração PHP
+[ ] 5.2 - Selecionou PHP 8.0 ou 8.1
+[ ] 5.3 - Verificou extensões ativas:
+         [ ] PDO
+         [ ] PDO_MySQL
+         [ ] mbstring
+         [ ] curl
+         [ ] gd
+         [ ] zip
+         [ ] intl
+
+[ ] 5.4 - Acessou hPanel → SSL
+[ ] 5.5 - Instalou certificado SSL
+[ ] 5.6 - Aguardou ativação (2-5 minutos)
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 6: TESTES
+═══════════════════════════════════════════════════════════════════
+
+[ ] 6.1 - Site acessível em https://seudominio.com
+[ ] 6.2 - Cadeado verde (SSL) ativo
+[ ] 6.3 - Página inicial carrega com tema azul/branco
+[ ] 6.4 - Logo "Tijolo da Fé" aparece
+[ ] 6.5 - Menu de navegação funciona
+[ ] 6.6 - Botões clicáveis:
+         [ ] Início
+         [ ] Tijolos
+         [ ] Aviator Celestial
+         [ ] Roleta da Fé
+
+[ ] 6.7 - Imagens carregam corretamente
+[ ] 6.8 - Layout responsivo (mobile/desktop)
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 7: ADMIN E FUNCIONALIDADES
+═══════════════════════════════════════════════════════════════════
+
+[ ] 7.1 - Admin acessível em /admin
+[ ] 7.2 - Login funcionando
+[ ] 7.3 - Painel admin carrega
+[ ] 7.4 - Configurações do sistema acessíveis
+[ ] 7.5 - Atualizado nome do site: "Tijolo da Fé"
+[ ] 7.6 - Upload de logo funciona
+[ ] 7.7 - Configurações salvas com sucesso
+
+[ ] 7.8 - Testou cadastro de usuário
+[ ] 7.9 - Testou login de usuário
+[ ] 7.10 - Sistema de afiliados acessível
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 8: GATEWAY E PAGAMENTOS (OPCIONAL)
+═══════════════════════════════════════════════════════════════════
+
+[ ] 8.1 - Configurou gateway de pagamento
+[ ] 8.2 - Atualizou credenciais da API
+[ ] 8.3 - Testou fluxo de depósito
+[ ] 8.4 - Testou fluxo de saque
+[ ] 8.5 - Webhooks configurados
+
+═══════════════════════════════════════════════════════════════════
+  PARTE 9: PÓS-DEPLOYMENT
+═══════════════════════════════════════════════════════════════════
+
+[ ] 9.1 - Alterou senha do admin
+[ ] 9.2 - Configurou backup automático
+[ ] 9.3 - Ativou monitoramento (se disponível)
+[ ] 9.4 - Documentou credenciais em local seguro
+[ ] 9.5 - Removeu arquivos desnecessários
+[ ] 9.6 - Verificou logs de erro (vazios)
+
+═══════════════════════════════════════════════════════════════════
+  ✅ DEPLOYMENT CONCLUÍDO
+═══════════════════════════════════════════════════════════════════
+
+🎉 Site no ar: https://________________________________
+
+Data de conclusão: ___/___/_____
+Responsável: _____________________________________
+Observações: ______________________________________
+          ______________________________________
+          ______________________________________
+
+═══════════════════════════════════════════════════════════════════
+
+ACESSOS IMPORTANTES:
+
+🌐 Site: https://________________________________
+🔐 Admin: https://________________________________/admin
+📊 phpMyAdmin: https://phpmyadmin.hostinger.com
+⚙️ hPanel: https://hpanel.hostinger.com
+
+═══════════════════════════════════════════════════════════════════

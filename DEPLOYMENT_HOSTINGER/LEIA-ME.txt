@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════════
+  PACOTE DE DEPLOYMENT - TIJOLO DA FÉ
+  Hostinger - Tudo pronto para upload!
+═══════════════════════════════════════════════════════════════════
+
+📦 CONTEÚDO DESTA PASTA:
+
+1. tijolo_da_fe_hostinger.zip (25 MB)
+   → ARQUIVO PRINCIPAL - Faça upload deste no Hostinger!
+
+2. GUIA_RAPIDO_HOSTINGER.md
+   → COMECE POR AQUI - Guia em 9 passos (25 minutos)
+
+3. INSTRUCOES_DEPLOYMENT_HOSTINGER.md
+   → Documentação completa e detalhada
+
+4. CHECKLIST_DEPLOYMENT.txt
+   → Marque cada passo conforme avança
+
+5. EXEMPLO_conexao.php
+   → Exemplo de como editar conexao.php
+
+6. COMANDOS_SQL_UTEIS.sql
+   → Comandos SQL para phpMyAdmin
+
+7. INDEX_DEPLOYMENT.md
+   → Índice completo do pacote
+
+═══════════════════════════════════════════════════════════════════
+
+🚀 INÍCIO RÁPIDO:
+
+1. Baixe: tijolo_da_fe_hostinger.zip
+2. Abra: GUIA_RAPIDO_HOSTINGER.md
+3. Siga os 9 passos
+4. Use: CHECKLIST_DEPLOYMENT.txt para marcar progresso
+
+═══════════════════════════════════════════════════════════════════
+
+⏱️ TEMPO ESTIMADO: 25-30 minutos
+
+✅ REQUISITOS:
+- Conta Hostinger ativa
+- Acesso ao hPanel
+- Arquivo SQL do banco (opcional, mas recomendado)
+
+═══════════════════════════════════════════════════════════════════
+
+📞 DÚVIDAS?
+
+Consulte: INSTRUCOES_DEPLOYMENT_HOSTINGER.md
+Ou: INDEX_DEPLOYMENT.md
+
+Boa sorte com o deployment! 🙏
+
+═══════════════════════════════════════════════════════════════════
